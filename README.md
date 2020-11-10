@@ -38,7 +38,18 @@ import { compileToModule } from "https://deno.land/x/deno_elm_compiler@0.1.0/com
 await compileToModuleString("./src/Main.elm", { output: "./src/elm.js" });
 ```
 
-then you can consume your Elm code like any of the following
+then run your bulid script with Deno
+
+```
+deno run --allow-env --allow-run --allow-write --allow-read build.ts
+```
+
+- `--allow-env` is required to pass in ENV variables to the Elm compiler
+- `--allow-run` is required to allow Deno to run the Elm compiler
+- `--allow-write` is required for writing a module and for compiling to a string
+- `--allow-read` is required for compiling to a string
+
+after you can consume your Elm code like any of the following
 
 ```javascript
 import Elm from "./src/elm.js";
