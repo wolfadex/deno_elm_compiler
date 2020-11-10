@@ -64,3 +64,7 @@ Main.init({ node: document.getElementById("elm-root") });
 ```
 
 For more details on Elm and Javascript interop, see [the Elm docs](https://guide.elm-lang.org/interop/).
+
+## Todo:
+
+- [ ] Add a cli wrapper so you can optionally do `deno-elm src/Main.elm --optimize --module --output=src/elm.js`
