@@ -33,7 +33,7 @@ main =
 in a build file do
 
 ```typescript
-import { compileToModule } from "https://raw.githubusercontent.com/wolfadex/deno_elm_compiler/master/compiler.ts";
+import { compileToModule } from "https://deno.land/x/deno_elm_compiler@0.1.0/compiler.ts";
 
 await compileToModuleString("./src/Main.elm", { output: "./src/elm.js" });
 ```
